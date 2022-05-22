@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+body{
+    background-color: rgb(255, 241, 242);
+    overflow-x: hidden;
+    font-family: 'Hina Mincho', serif;
+    font-family: 'Quintessential', cursive;
+}
+header{
+    text-align: center;
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(48, 18, 18, 0.692);
+    background-color: #ffc7b6;
+    backdrop-filter: blur(12px);
+}
+@keyframes gradient {
+    0% {
+       background-position: 0% 50%;
+    }
+    50% {
+       background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+}
+header div{
+    display: flex;
+    padding-top: 4px;
+}
+h5{
+    margin-right: 20px; 
+    font-size: 15px;
+}
+section{
+    padding: 2rem 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+}
+.spin1{
+    width:20px;
+    height:15px;
+    border-radius: 50%;
+    border:1px solid rgba(20, 1, 1, 0.671);
+    margin-left: 15px;
+}
+.spin2{
+    width:20px;
+    height:15px;
+    border-radius: 50%;
+    border:1px solid rgba(20, 1, 1, 0.671);
+    margin-left: 15px;
+}
+.spin3{
+    width:20px;
+    height:15px;
+    border-radius: 50%;
+    border:1px solid rgba(20, 1, 1, 0.671);
+    margin-left: 15px;
+}
+.spin4{
+    width:20px;
+    height:15px;
+    border-radius: 50%;
+    border:1px solid rgba(20, 1, 1, 0.671);
+    margin-left: 15px;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: rgb(86, 199, 86);
+}
+.card{
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    width: 40%;
+    background-color: #f4ded778;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+h3{
+    font-size: 20px;
+}
+.text{
+    display: flex;
+    align-items: center;
+}
+button{
+    margin-top: 20px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+    border: none;
+    width: 62px;
+    font-size: 20px;
+    height: 33px;
+    text-transform: capitalize;
+    background-color: #ffc7b6;
+    color: #1a0000b8;
+}
+
+@media (max-width:768px){
+
+}
+
+@media (max-width:450px){
+.card{
+    width: 90%;
+}
+}

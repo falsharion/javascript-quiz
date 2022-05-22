@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Quintessential&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>How much do you know Sharon</h1>
+        <div>
+            <h5>correct - green </h5>
+            <h5>wrong - red</h5>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article class="card 1">
+                <div class="text">
+                    <h3>She loves eating beans</h3><div class="spin1"></div>
+                </div>
+                <div>
+                    <button onclick="trueFunction()" class="cTrue">true</button>
+                    <button onclick="falseFunction()" class="cFalse">false</button>
+                </div>
+            </article>
+            <article class="card 2">
+                <div class="text">
+                    <h3>She loves css </h3><div class="spin2"></div>
+                </div>
+                <div>
+                    <button onclick="falseFunction1()">true</button>
+                    <button onclick="trueFunction1()">false</button>
+                </div>
+            </article>
+            <article class="card 3">
+                <div class="text">
+                    <h3>she is a shy girl </h3><div class="spin3"></div>
+                </div>
+                <div>
+                    <button onclick="trueFunction2()">true</button>
+                    <button onclick="falseFunction2()">false</button>
+                </div>
+            </article>
+            <article class="card 4">
+                <div class="text">
+                    <h3>she is an entrepreneur </h3><div class="spin4"></div>
+                </div>
+                <div>
+                    <button onclick="falseFunction3()">true</button>
+                    <button onclick="trueFunction3()">false</button>
+                </div>
+            </article>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+
+</html>
