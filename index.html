@@ -14,50 +14,25 @@
 
 <body>
     <header>
-        <h1>How much do you know Sharon</h1>
+        <h1>Do you know sharon ?</h1>
         <div>
-            <h5>correct - green </h5>
-            <h5>wrong - red</h5>
+            <h5>green - right</h5>
+            <h5>red - wrong</h5>
         </div>
     </header>
     <main>
         <section>
-            <article class="card 1">
-                <div class="text">
-                    <h3>She loves eating beans</h3><div class="spin1"></div>
+            <div class="alerts"></div>
+            <article class="cards">
+                <div id="questions">questions</div>
+                <div id ="answers-btn" class="answers">
+                    <button class="btn1" onclick="checkQuest1()">answer1</button>
+                    <button class="btn2" onclick="checkQuest2()">answer2</button>
                 </div>
-                <div>
-                    <button onclick="trueFunction()" class="cTrue">true</button>
-                    <button onclick="falseFunction()" class="cFalse">false</button>
-                </div>
-            </article>
-            <article class="card 2">
-                <div class="text">
-                    <h3>She loves css </h3><div class="spin2"></div>
-                </div>
-                <div>
-                    <button onclick="falseFunction1()">true</button>
-                    <button onclick="trueFunction1()">false</button>
-                </div>
-            </article>
-            <article class="card 3">
-                <div class="text">
-                    <h3>she is a shy girl </h3><div class="spin3"></div>
-                </div>
-                <div>
-                    <button onclick="trueFunction2()">true</button>
-                    <button onclick="falseFunction2()">false</button>
-                </div>
-            </article>
-            <article class="card 4">
-                <div class="text">
-                    <h3>she is an entrepreneur </h3><div class="spin4"></div>
-                </div>
-                <div>
-                    <button onclick="falseFunction3()">true</button>
-                    <button onclick="trueFunction3()">false</button>
-                </div>
-            </article>
+            </article> 
+            <div class="control">
+                <button id="next-btn" onclick="nextQuestions()">next</button>
+            </div> 
         </section>
     </main>
 <script src="script.js"></script>
