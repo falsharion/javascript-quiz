@@ -20,8 +20,8 @@ const questions = [
     {
       question: 'what does she prefer more?',
       answers: [
-        { text: 'eating', correct: false },
-        { text: 'running', correct: true }
+        { text: 'eating', correct: true },
+        { text: 'running', correct: false }
       ]
     },
     {
@@ -34,8 +34,8 @@ const questions = [
     {
       question: 'Her favourite food is what',
       answers: [
-        { text: 'rice', correct: false },
-        { text: 'yam', correct: true }
+        { text: 'beans', correct: false },
+        { text: 'chips', correct: true }
       ]
     }
   ]
@@ -60,31 +60,41 @@ function nextQuestions() {
         let randomQuest = Number.parseInt(Math.random() * questions.length);
         question_index = randomQuest;
     } else{
-        question_index = 0;
+        // question_index = 0;
+        nextQuestion.textContent = "submit";
     }
 
     loadQuestion(question_index);
 
 }
+let score = 1;
 // check if the answer is right
 function checkQuest1() {
     let ans1 = questions[question_index].answers[0].correct;
     if (ans1 == true) {
         alerts.classList.add('green');
+        console.log(score++);
         alerts.classList.remove('red'); 
+
     } else{
         alerts.classList.add('red');
         alerts.classList.remove('green'); 
     }
+
 }
 function checkQuest2() {
     let ans2 = questions[question_index].answers[1].correct;
     if (ans2 == true) {    
-        alerts.classList.remove('red');     
+        alerts.classList.remove('red');    
+        console.log(score++); 
         alerts.classList.add('green');
     } else{
         alerts.classList.remove('green');        
         alerts.classList.add('red');
-
     }
+
 }
+ function result() {
+     
+ }
+
